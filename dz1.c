@@ -6,14 +6,15 @@
 int main(void){
 	double pre;
 	long ic;
-	char strf[17];
+	char strf[15];
 	char stri[21];
-        if(!scanf("%lf",&pre)){
+	printf("enter no more than 14 digits\n");
+        if(!scanf("%14lf",&pre)){
                 printf("no char\n");
                 exit(0);
         }
 	ic=(long)pre;
-	gcvt(pre,17,strf);
+	gcvt(pre,15,strf);
 	if(strf[0]=='-'){
 		printf("negative values not supported\n");
 		exit(0);
