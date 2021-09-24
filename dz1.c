@@ -8,11 +8,14 @@ int main(void){
 	long ic;
 	char strf[17];
 	char stri[21];
-	scanf("%lf",&pre);
+        if(!scanf("%lf",&pre)){
+                printf("no char\n");
+                exit(0);
+        }
 	ic=(long)pre;
 	gcvt(pre,17,strf);
 	if(strf[0]=='-'){
-		printf("not supported\n");
+		printf("negative values not supported\n");
 		exit(0);
 	}
 	gcvt(ic,21,stri);
