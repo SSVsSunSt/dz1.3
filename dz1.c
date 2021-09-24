@@ -9,7 +9,6 @@ int main(void){
 	char strf[17];
 	char stri[21];
 	scanf("%lf",&pre);
-	printf("%lf\n",pre);
 	ic=(long)pre;
 	gcvt(pre,17,strf);
 	if(strf[0]=='-'){
